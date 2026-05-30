@@ -114,6 +114,105 @@ def load_and_preprocess_charting_data(
     X = df.copy()
     y = df["Player_1_Wins"]
     
+    # ===== EXTRACT NEW FEATURES =====
+    
+    # 1. Day of week from date (Monday=0, Sunday=6)
+    X["DayOfWeek"] = X["Date"].dt.dayofweek
+    
+    # 2. Match time features
+    def extract_time_hour(time_str):
+        """Extract hour from time string (e.g., '5pm' -> 17)"""
+        if pd.isna(time_str) or time_str == "":
+            return 12  # Default to noon if missing
+        time_str = str(time_str).lower().strip()
+        try:
+            if "am" in time_str:
+                hour = int(time_str.replace("am", "").strip())
+                return hour if hour == 12 else hour
+            elif "pm" in time_str:
+                hour = int(time_str.replace("pm", "").strip())
+                return 12 if hour == 12 else hour + 12
+            else:
+                return 12
+        except:
+            return 12
+    
+    X["Match_Hour"] = X["Time"].apply(extract_time_hour)
+    
+    # 3. Handedness matchup type (RR, RL, LR, LL, etc)
+    def encode_matchup(hand1, hand2):
+        """Encode handedness matchup type"""
+        h1 = str(hand1).upper() if pd.notna(hand1) else "U"
+        h2 = str(hand2).upper() if pd.notna(hand2) else "U"
+        return f"{h1}{h2}"
+    
+    X["Handedness_Matchup"] = df.apply(
+        lambda row: encode_matchup(row["Pl 1 hand"], row["Pl 2 hand"]), axis=1
+    )
+    
+    # 4. Umpire presence (1 if umpire, 0 if not)
+    X["Has_Umpire"] = (X["Umpire"].notna() & (X["Umpire"] != "")).astype(int)
+    
+    # 5. Charting quality (unique charting sources - more sources = more reliable)
+    charting_quality = X["Charted by"].value_counts()
+    X["Charting_Quality_Score"] = X["Charted by"].map(
+        lambda x: min(charting_quality.get(x, 1), 10) if pd.notna(x) else 1
+    )
+    
+    # 6. Final tiebreak indicator
+    def encode_final_tb(val):
+        """Encode Final TB? column"""
+        if pd.isna(val) or val == "":
+            return 0  # No data means no tiebreak
+        val_str = str(val).upper()
+        if val_str == "1":
+            return 1  # Yes, went to final TB
+        elif val_str == "0" or val_str == "A":
+            return 0  # No final TB or retired
+        else:
+            return 0  # Default
+    
+    X["Final_Tiebreak"] = X["Final TB?"].apply(encode_final_tb)
+    
+    # 7. Tournament tier/level (Grand Slams are tier 1, Masters tier 2, etc)
+    grand_slams = {"Australian Open", "French Open", "Wimbledon", "US Open", "Roland Garros"}
+    masters_tournaments = {
+        "Rome Masters", "Monte Carlo Masters", "Cincinnati Masters", 
+        "Madrid Masters", "Miami Masters", "Canada Masters", "Shanghai Masters"
+    }
+    
+    def tournament_tier(tournament_name):
+        """Determine tournament tier"""
+        if pd.isna(tournament_name):
+            return 3
+        t_name = str(tournament_name)
+        if any(gs in t_name for gs in grand_slams):
+            return 1  # Grand Slam
+        elif any(m in t_name for m in masters_tournaments):
+            return 2  # Masters 1000
+        elif "500" in t_name or "ATP 500" in t_name:
+            return 3  # ATP 500
+        elif "250" in t_name or "ATP 250" in t_name:
+            return 4  # ATP 250
+        else:
+            return 5  # Other
+    
+    X["Tournament_Tier"] = X["Tournament"].apply(tournament_tier)
+    
+    # 8. Court type (indoor/outdoor derived from court name)
+    def classify_court_type(court_name):
+        """Classify court as indoor/outdoor based on name"""
+        if pd.isna(court_name):
+            return 0  # Unknown
+        court_str = str(court_name).lower()
+        indoor_keywords = ["arena", "indoor", "coliseum", "colosseum", "center", "centre", "auditorium"]
+        if any(keyword in court_str for keyword in indoor_keywords):
+            return 1  # Indoor
+        else:
+            return 0  # Outdoor or unknown
+    
+    X["Is_Indoor_Court"] = X["Court"].apply(classify_court_type)
+    
     # Drop non-feature columns
     cols_to_drop = ["match_id", "Player 1", "Player 2", "Pl 1 hand", "Pl 2 hand", 
                      "Date", "Umpire", "Charted by", "Player_1_Wins", "Final TB?",
@@ -131,7 +230,8 @@ def load_and_preprocess_charting_data(
     # Round encoding (convert to numeric)
     round_mapping = {
         "Q3": 1, "Q2": 1, "Q1": 1,  # Qualifying
-        "R128": 2, "R64": 3, "R32": 4, "R16": 5, "QF": 6, "SF": 7, "F": 8
+        "R128": 2, "R64": 3, "R32": 4, "R16": 5, "QF": 6, "SF": 7, "F": 8,
+        "BR": 6, "RR": 5, "PO": 8, "PQ": 1  # Additional rounds
     }
     X["Round_encoded"] = X["Round"].map(round_mapping).fillna(2)
     
@@ -150,10 +250,22 @@ def load_and_preprocess_charting_data(
     X["Tournament"] = X["Tournament"].apply(lambda x: x if x in top_tournaments else "Other")
     
     # Identify numerical and categorical features
-    numerical_features = ["Year", "Month", "Day", "Best of", 
+    # NEW FEATURES ADDED:
+    # - DayOfWeek: day of week (0-6)
+    # - Match_Hour: hour of day (0-23)
+    # - Has_Umpire: binary indicator if umpire present
+    # - Charting_Quality_Score: quality of charting data (1-10)
+    # - Final_Tiebreak: binary indicator if match went to final TB
+    # - Tournament_Tier: tier of tournament (1-5)
+    # - Is_Indoor_Court: binary indicator if court is indoor
+    # Total features now: 79 numerical + categorical one-hots
+    
+    numerical_features = ["Year", "Month", "Day", "DayOfWeek", "Match_Hour", "Best of", 
                          "Pl1_hand_encoded", "Pl2_hand_encoded",
-                         "Surface_encoded", "Round_encoded"]
-    categorical_features = ["Tournament", "Court"]
+                         "Surface_encoded", "Round_encoded", "Has_Umpire",
+                         "Charting_Quality_Score", "Final_Tiebreak", "Tournament_Tier",
+                         "Is_Indoor_Court"]
+    categorical_features = ["Tournament", "Court", "Handedness_Matchup"]
     
     # Handle missing values in numerical features
     X[numerical_features] = X[numerical_features].fillna(X[numerical_features].median())
