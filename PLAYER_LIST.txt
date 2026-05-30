@@ -1,0 +1,1804 @@
+ATP TENNIS PLAYERS DATABASE
+Total unique players: 1799
+Data from: 2000-2023
+============================================================
+
+   1.  Hajek J.
+   2. Abdulla M.
+   3. Abel M.
+   4. Acasuso J.
+   5. Adaktusson J.
+   6. Added D.
+   7. Agaev E.
+   8. Agamenone F.
+   9. Agassi A.
+  10. Agenor R.
+  11. Ager J.
+  12. Agostinelli B.
+  13. Aguilar J.
+  14. Ahouda A.
+  15. Ajdukovic D.
+  16. Al Ghareeb M.
+  17. Al Khulaifi N.G.
+  18. Al-Alawi S.K.
+  19. Al-Ghareeb M.
+  20. Alami K.
+  21. Albert M.
+  22. Albot R.
+  23. Alcaide G.
+  24. Alcaraz C.
+  25. Aldi F.
+  26. Allegro Y.
+  27. Almagro N.
+  28. Almagro N. 
+  29. Alonso J.
+  30. Altamirano C.
+  31. Altmaier D.
+  32. Alund M.
+  33. Alvarez E.
+  34. Alvarez Valdes L.C.
+  35. Alvarez Varona N.
+  36. Alves M.
+  37. Alves T.
+  38. Amritraj P.
+  39. Ancic I.
+  40. Ancic M.
+  41. Andersen J.
+  42. Andersen J.F.
+  43. Anderson A.
+  44. Anderson K.
+  45. Anderson O.
+  46. Andersson H.
+  47. Andreev A.
+  48. Andreev I.
+  49. Andreev I. 
+  50. Andreozzi G.
+  51. Androic T.
+  52. Andujar P.
+  53. Aragone J.
+  54. Aragone J.C.
+  55. Aragone JC
+  56. Aranguren J.M.
+  57. Arazi H.
+  58. Arevalo M.
+  59. Arguello F.
+  60. Armando H.
+  61. Arnaboldi A.
+  62. Arnaldi M.
+  63. Arnold L.
+  64. Arquez P.
+  65. Arseneault N.
+  66. Arthurs W.
+  67. Artunedo Martinavarro A.
+  68. Arvidsson I.
+  69. Ascione A.
+  70. Ascione T.
+  71. Atmane T.
+  72. Auckland J.
+  73. Auger-Aliassime F.
+  74. Authom M.
+  75. Avidzba A.
+  76. Awadhy O.
+  77. Ayala D.
+  78. Azzaro L.
+  79. Baadi T.
+  80. Baccanello P.
+  81. Bachelot J.F
+  82. Bachinger M.
+  83. Baez S.
+  84. Baghdatis M.
+  85. Bagnis F.
+  86. Bahrouzyan O.
+  87. Bai Y.
+  88. Bailly G.
+  89. Bailly G.A.
+  90. Baker B.
+  91. Baker J.
+  92. Balazs A.
+  93. Balcells J.
+  94. Baldi F.
+  95. Ball C.
+  96. Balleret B.
+  97. Baluda V.
+  98. Bangoura S.
+  99. Barranco Cosano J.
+ 100. Barrena A.
+ 101. Barrere G.
+ 102. Barrientos N.
+ 103. Barrios M.
+ 104. Barrios Vera M.T.
+ 105. Barton M.
+ 106. Basavareddy N.
+ 107. Basic M.
+ 108. Basilashvili N.
+ 109. Basso A.
+ 110. Bastl G.
+ 111. Bautista Agut R.
+ 112. Bautista R.
+ 113. Bautista R. 
+ 114. Beck A.
+ 115. Beck A. 
+ 116. Beck K.
+ 117. Becker B.
+ 118. Becker B. 
+ 119. Becroft I.
+ 120. Bedene A.
+ 121. Bega A.
+ 122. Behr N.
+ 123. Behrend T.
+ 124. Behrmann M.
+ 125. Belal C.
+ 126. Belic L.
+ 127. Bellier A.
+ 128. Bellotti R.
+ 129. Bellucci M.
+ 130. Bellucci T.
+ 131. Belyaev I.
+ 132. Bemelmans R.
+ 133. Benchetrit E.
+ 134. Bennani K.
+ 135. Bennani R.
+ 136. Benneteau A.
+ 137. Benneteau J.
+ 138. Benneteau J. 
+ 139. Berankis R.
+ 140. Berasategui A.
+ 141. Berdych T.
+ 142. Berdych T. 
+ 143. Bergs Z.
+ 144. Berlocq C.
+ 145. Bernet H.
+ 146. Berrer M.
+ 147. Berrettini J.
+ 148. Berrettini M.
+ 149. Berrettini M. 
+ 150. Bertola R.
+ 151. Bester P.
+ 152. Betov S.
+ 153. Bhambri Y.
+ 154. Bhupathi M.
+ 155. Biryukov M.
+ 156. Bjorkman J.
+ 157. Black B.
+ 158. Black W.
+ 159. Blake J.
+ 160. Blake J. 
+ 161. Blake T.
+ 162. Blancaneaux G.
+ 163. Blanch D.
+ 164. Blanch Dar.
+ 165. Blanch U.
+ 166. Blanchet U.
+ 167. Blanco G.
+ 168. Blockx A.
+ 169. Bloomfield R.
+ 170. Blumberg W.
+ 171. Boeker M.
+ 172. Bogaerts R.
+ 173. Bogdanovic A.
+ 174. Bogomolov A.
+ 175. Bogomolov Jr. A.
+ 176. Bogomolov Jr.A.
+ 177. Bohaboy D.
+ 178. Bohane A.
+ 179. Bohli S.
+ 180. Bohli S. 
+ 181. Boitan G.A.
+ 182. Bolelli S.
+ 183. Bolelli S. 
+ 184. Bolt A.
+ 185. Bonadio R.
+ 186. Bonzi B.
+ 187. Boogaard T.
+ 188. Bopanna R.
+ 189. Borg L.
+ 190. Borges N.
+ 191. Boruszewski J.
+ 192. Borvanov R.
+ 193. Bossel A.
+ 194. Bourchier H.
+ 195. Bourgeois L.
+ 196. Bourgue M.
+ 197. Boutter J.
+ 198. Bower J.
+ 199. Bowles C.
+ 200. Boyer T.
+ 201. Bozic I.
+ 202. Bozoljac I.
+ 203. Braasch K.
+ 204. Bracciali D.
+ 205. Braga P.
+ 206. Brancaccio R.
+ 207. Brands D.
+ 208. Brasington J.
+ 209. Breen M.
+ 210. Britton D.
+ 211. Brizzi A.
+ 212. Broady L.
+ 213. Brooksby J.
+ 214. Broom C.
+ 215. Brouwer G.
+ 216. Brown D.
+ 217. Browne F.
+ 218. Bruguera S.
+ 219. Brugues-Davi A.
+ 220. Bryan B.
+ 221. Bryan M.
+ 222. Bryde T.
+ 223. Brzezicki J.P.
+ 224. Bu Y.
+ 225. Bubka S.
+ 226. Bublik A.
+ 227. Buchanan C.
+ 228. Budkov Kjaer N.
+ 229. Burgsmuller L.
+ 230. Burniol G.
+ 231. Burquier G.
+ 232. Burrieza O.
+ 233. Burruchaga R.
+ 234. Buse I.
+ 235. Cabal J.S.
+ 236. Cabello F.
+ 237. Cachin P.
+ 238. Cacic N.
+ 239. Cadart R.
+ 240. Cakl T.
+ 241. Calatrava A.
+ 242. Caldwell D.
+ 243. Calleri A.
+ 244. Canas G.
+ 245. Capalik K.
+ 246. Capdeville P.
+ 247. Caratti C.
+ 248. Carballes Baena R.
+ 249. Carlsen K.
+ 250. Carraz G.
+ 251. Carreno Busta P.
+ 252. Carreno-Busta P.
+ 253. Carretero R.
+ 254. Caruana L.
+ 255. Caruso S.
+ 256. Casanova H.
+ 257. Cassone M.
+ 258. Catarina L.
+ 259. Cazaux A.
+ 260. Cecchinato M.
+ 261. Celikbilek A.
+ 262. Cermak F.
+ 263. Cerundolo F.
+ 264. Cerundolo J.M.
+ 265. Cervantes I.
+ 266. Cervenak P.
+ 267. Chadaj A.
+ 268. Chaen T.
+ 269. Chaki R.
+ 270. Chang M.
+ 271. Chappell N.
+ 272. Chardy J.
+ 273. Chardy J. 
+ 274. Charpentier M.
+ 275. Chekov P.
+ 276. Chela J.
+ 277. Chela J.I.
+ 278. Chen T.
+ 279. Cherkasov A.
+ 280. Chidekh C.
+ 281. Childs L.
+ 282. Chiudinelli M.
+ 283. Chiudinelli M. 
+ 284. Choinski J.
+ 285. Chrysochos P.
+ 286. Chung H.
+ 287. Chung Y.
+ 288. Chvojka E.
+ 289. Cilic M.
+ 290. Cilic M. 
+ 291. Cina F.
+ 292. Ciorcila P.
+ 293. Cipolla F.
+ 294. Clarke J.
+ 295. Clavet F.
+ 296. Clayton A.
+ 297. Clemens T.
+ 298. Clement A.
+ 299. Clezar G.
+ 300. Cobolli F.
+ 301. Cobolli S.
+ 302. Coetzee J.
+ 303. Collarini A.
+ 304. Collignon R.
+ 305. Comesana F.
+ 306. Condor F.
+ 307. Cook L.
+ 308. Copil M.
+ 309. Coppejans K.
+ 310. Coria F.
+ 311. Coria G.
+ 312. Coric B.
+ 313. Corretja A.
+ 314. Corrie E.
+ 315. Cortes J.
+ 316. Costa A.
+ 317. Costa F.
+ 318. Couacaud E.
+ 319. Courier J.
+ 320. Coutelot N.
+ 321. Couto E.
+ 322. Cowan B.
+ 323. Cox D.
+ 324. Crabb J.
+ 325. Craca M.
+ 326. Crawford O.
+ 327. Cressy M.
+ 328. Crivoi V.
+ 329. Cruciat A.
+ 330. Crugnola M.
+ 331. Cuadrado C.
+ 332. Cuevas P.
+ 333. Cuevas P. 
+ 334. Cui J.
+ 335. Dabrowski B.
+ 336. Dabul B.
+ 337. Dailey Z.
+ 338. Damm M.
+ 339. Dancevic F.
+ 340. Daniel M.
+ 341. Daniel T.
+ 342. Darcis S.
+ 343. Darderi L.
+ 344. Dasnieres de Veigy J.
+ 345. Davidovich Fokina A.
+ 346. Davletshin V.
+ 347. Davydenko N.
+ 348. Davydenko N. 
+ 349. Davydenko P.
+ 350. De Bakker T.
+ 351. De Chaunac S.
+ 352. De Greef A.
+ 353. De Heart R.
+ 354. De Jong J.
+ 355. De Loore J.
+ 356. De Minaur A.
+ 357. De Paula F.
+ 358. De Schepper K.
+ 359. De Voest R.
+ 360. Decoud S.
+ 361. Dedura D.
+ 362. Dedura-Palomero D.
+ 363. Deen Heshaam A.
+ 364. Deheart R.
+ 365. Del Bonis F.
+ 366. Del Potro J.
+ 367. Del Potro J. M.
+ 368. Del Potro J.M.
+ 369. Delbonis F.
+ 370. Delfino M.
+ 371. Delgado J.
+ 372. Delgado R.
+ 373. Delic A.
+ 374. Delic M.
+ 375. Dell'Acqua M.
+ 376. Dellien H.
+ 377. Demoliner M.
+ 378. Den Ouden G.
+ 379. Denolly C.
+ 380. Dent T.
+ 381. Derepasko A.
+ 382. Desein N.
+ 383. Dev Varman S.
+ 384. Devilder N.
+ 385. Devvarman S.
+ 386. Dewulf F.
+ 387. Di Mauro A.
+ 388. Di Pasquale A.
+ 389. Diallo G.
+ 390. Diaz Acosta F.
+ 391. Diaz J.
+ 392. Diez S.
+ 393. Dimitrov G.
+ 394. Djere L.
+ 395. Djokovic M.
+ 396. Djokovic N.
+ 397. Djokovic N. 
+ 398. Djuric B.
+ 399. Dlouhy L.
+ 400. Do M.Q.
+ 401. Dodig I.
+ 402. Dodig M.
+ 403. Dolgopolov A.
+ 404. Dolgopolov O.
+ 405. Domingues J.
+ 406. Donaldson J.
+ 407. Donati M.
+ 408. Donski A.
+ 409. Donskoy E.
+ 410. Dorsch B.
+ 411. Dosedel S.
+ 412. Dostanic S.
+ 413. Dougaz A.
+ 414. Draper J.
+ 415. Draper S.
+ 416. Draxl L.
+ 417. Dreekmann H.
+ 418. Droguet T.
+ 419. Dubrivnyy A.
+ 420. Duckworth J.
+ 421. Duclos P.L.
+ 422. Dupre T.
+ 423. Dupuis A.
+ 424. Durasovic V.
+ 425. Durek R.
+ 426. Dustov F.
+ 427. Dutra Da Silva D.
+ 428. Dutra Da Silva R.
+ 429. Dutra Silva R.
+ 430. Dzumhur D.
+ 431. Eagle J.
+ 432. Eaton C.
+ 433. Ebden M.
+ 434. Ebelthite C.
+ 435. Echagaray B.
+ 436. Echargui M.
+ 437. Economidis K.
+ 438. Edmund K.
+ 439. Ehrat S.
+ 440. Eitzinger R.
+ 441. El Aarej M.
+ 442. El Amrani R.
+ 443. El Aynaoui Y.
+ 444. Eleskovic E.
+ 445. Elgin M.
+ 446. Elias G.
+ 447. Ellwood B.
+ 448. Elseneer G.
+ 449. Elsner D.
+ 450. Emmrich M.
+ 451. Engel J.
+ 452. Enqvist T.
+ 453. Eriksson M.
+ 454. Erler A.
+ 455. Erlich J.
+ 456. Eschauer W.
+ 457. Escobar G.
+ 458. Escobedo E.
+ 459. Escoffier A.
+ 460. Escude N.
+ 461. Estrella Burgos V.
+ 462. Estrella V.
+ 463. Etcheverry T.
+ 464. Etcheverry T. M.
+ 465. Etlis G.
+ 466. Eubanks C.
+ 467. Evans B.
+ 468. Evans D.
+ 469. Eysseric J.
+ 470. Fabbiano T.
+ 471. Fahlke A.
+ 472. Falla A.
+ 473. Falla A. 
+ 474. Fancutt T.
+ 475. Fanselow S.
+ 476. Farah R.
+ 477. Faria J.
+ 478. Fasching A.
+ 479. Faurel J.C.
+ 480. Fearnley J.
+ 481. Federer R.
+ 482. Federer R. 
+ 483. Ferreira Silva F.
+ 484. Ferreira W.
+ 485. Ferreiro F.
+ 486. Ferrer D.
+ 487. Ferrer D. 
+ 488. Ferrero J.
+ 489. Ferrero J.C.
+ 490. Ferrero J.C. 
+ 491. Fery A.
+ 492. Ficovich J.P.
+ 493. Fidirko N.
+ 494. Filippini M.
+ 495. Fils A.
+ 496. Fischer M.
+ 497. Fish A.
+ 498. Fish M.
+ 499. Fitz S.
+ 500. Flanagan I.
+ 501. Fleischfresser T.
+ 502. Fleishman Z.
+ 503. Fleming C.
+ 504. Flygt K.
+ 505. Fognini F.
+ 506. Fogues F.
+ 507. Fonseca J.
+ 508. Forbes M.
+ 509. Forejtek J.
+ 510. Fornell M.
+ 511. Fraile G.
+ 512. Fratangelo B.
+ 513. Freelove O.
+ 514. Friberg K.
+ 515. Friedl L.
+ 516. Fritz T.
+ 517. Froberg J.
+ 518. Fromberg R.
+ 519. Fruttero J.P.
+ 520. Fucsovics M.
+ 521. Fukarek O.
+ 522. Furlan R.
+ 523. Furness E.
+ 524. Fyrstenberg M.
+ 525. Gabashvili T.
+ 526. Gaio F.
+ 527. Gakhov I.
+ 528. Galan D.
+ 529. Galan D.E.
+ 530. Galarneau A.
+ 531. Galdon P.
+ 532. Galimberti G.
+ 533. Gallardo M.
+ 534. Gallardo Valles M.
+ 535. Galovic V.
+ 536. Galvani S.
+ 537. Gambill J. M.
+ 538. Gambill J.M.
+ 539. Gamonal H.
+ 540. Gao X.
+ 541. Garanganga T.
+ 542. Garcia A.
+ 543. Garcia M.
+ 544. Garcia-Lopez G.
+ 545. Garcia-Lopez G. 
+ 546. Garcia-Sintes J.
+ 547. Gard C.
+ 548. Garin C.
+ 549. Garza D.
+ 550. Gasquet R.
+ 551. Gasquet R. 
+ 552. Gaston H.
+ 553. Gaubas V.
+ 554. Gaudenzi A.
+ 555. Gaudi I.
+ 556. Gaudio G.
+ 557. Gea A.
+ 558. Geerts M.
+ 559. Gensse A.
+ 560. Gerasimov E.
+ 561. Ghedin R.
+ 562. Ghem A.
+ 563. Giannessi A.
+ 564. Gicquel M.
+ 565. Gigante M.
+ 566. Gigounon G.
+ 567. Gil F.
+ 568. Gimelstob J.
+ 569. Gimeno D.
+ 570. Gimeno Valero C.
+ 571. Gimeno-Traver D.
+ 572. Gimeno-Traver D. 
+ 573. Ginepri R.
+ 574. Giner J.
+ 575. Giraldo S.
+ 576. Giron M.
+ 577. Giustino L.
+ 578. Godwin N.
+ 579. Goellner M.K.
+ 580. Goffin D.
+ 581. Gojo B.
+ 582. Gojowczyk P.
+ 583. Golding O.
+ 584. Goldstein P.
+ 585. Golmard J.
+ 586. Golovanov D.
+ 587. Golubev A.
+ 588. Gombos N.
+ 589. Gomez A.
+ 590. Gomez E.
+ 591. Gomez F.
+ 592. Gomez F.A.
+ 593. Gomez L.
+ 594. Gomez-Herrera C.
+ 595. Gong M.X.
+ 596. Gonzalez A.
+ 597. Gonzalez F.
+ 598. Gonzalez F. 
+ 599. Gonzalez M.
+ 600. Gonzalez P.
+ 601. Gonzalez S.
+ 602. Goodall J.
+ 603. Gooding J.
+ 604. Goransson T.
+ 605. Granollers G.
+ 606. Granollers M.
+ 607. Granollers M. 
+ 608. Granollers Pujol G.
+ 609. Granollers-Pujol G.
+ 610. Granollers-Pujol M.
+ 611. Gray A.
+ 612. Gregorc L.
+ 613. Gremelmayr D.
+ 614. Grenier H.
+ 615. Greul S.
+ 616. Greul S. 
+ 617. Griekspoor T.
+ 618. Grigelis L.
+ 619. Grosjean S.
+ 620. Gross O.
+ 621. Groth S.
+ 622. Gruber K.
+ 623. Guardiola T.
+ 624. Guccione A.
+ 625. Guccione C.
+ 626. Guez D.
+ 627. Guillen Meza A.
+ 628. Guinard M.
+ 629. Gulbis E.
+ 630. Gumy H.
+ 631. Gunneswaran P.
+ 632. Gustafsson M.
+ 633. Gutierrez-Ferrol S.
+ 634. Guzman J.
+ 635. Guzman J.P.
+ 636. Haas T.
+ 637. Haase R.
+ 638. Habib H.
+ 639. Hadad A.
+ 640. Hadad M.
+ 641. Haehnel J.
+ 642. Haider-Mauer A.
+ 643. Haider-Maurer A.
+ 644. Hajek J.
+ 645. Halebian A.
+ 646. Halys Q.
+ 647. Hamou M.
+ 648. Hanescu V.
+ 649. Hanescu V. 
+ 650. Hanfmann Y.
+ 651. Hank T.
+ 652. Hanley P.
+ 653. Hantschek M.
+ 654. Hantschk M.
+ 655. Harboe P.
+ 656. Hardt N.
+ 657. Harper-Griffith L.
+ 658. Harris A.
+ 659. Harris B.
+ 660. Harris L.
+ 661. Harrison C.
+ 662. Harrison R.
+ 663. Harsanyi P.
+ 664. Hartfield D.
+ 665. Hassan B.
+ 666. Healey N.
+ 667. Heide G.
+ 668. Hellstrom M.
+ 669. Hemery C.
+ 670. Hemmes F.
+ 671. Henman T.
+ 672. Henry R.
+ 673. Herbert P-H.
+ 674. Herbert P.
+ 675. Herbert P.H
+ 676. Herbert P.H.
+ 677. Herm-Zahlava J.
+ 678. Hernandez A.
+ 679. Hernandez O.
+ 680. Hernandez-Fernandez J
+ 681. Hernandez-Fernandez J.
+ 682. Hernych J.
+ 683. Hernych J. 
+ 684. Heuberger I.
+ 685. Hewitt L.
+ 686. Hijikata R.
+ 687. Hill M.
+ 688. Hilton M.
+ 689. Hipfl M.
+ 690. Hippensteel K.
+ 691. Hirigoyen I.
+ 692. Hoang A.
+ 693. Hocevar R.
+ 694. Holmgren A.
+ 695. Holt B.
+ 696. Hong S.
+ 697. Hood M.
+ 698. Horansky F.
+ 699. Hormazabal G.
+ 700. Horna L.
+ 701. Hossam K.
+ 702. Hrbaty D.
+ 703. Hsu Y.
+ 704. Huesler M.
+ 705. Huesler M.A.
+ 706. Huet S.
+ 707. Hui J.
+ 708. Humbert U.
+ 709. Humphries S.
+ 710. Hurkacz H.
+ 711. Hussey G.
+ 712. Huta Galung J.
+ 713. Ianni S.
+ 714. Idmbarek Y.
+ 715. Ignatik U.
+ 716. Ilhan M.
+ 717. Ilie A.
+ 718. Ilkel C.
+ 719. Im K.T.
+ 720. Inglot D.
+ 721. Ionita V.
+ 722. Ishii Y.
+ 723. Isner J.
+ 724. Isner J. 
+ 725. Istomin D.
+ 726. Ito T.
+ 727. Ito Y.
+ 728. Ittogi T.
+ 729. Ivanisevic G.
+ 730. Ivanov I.
+ 731. Ivanov-Smolensky K.
+ 732. Ivashka I.
+ 733. Iwabuchi S.
+ 734. Iwami T.
+ 735. Jacquet K.
+ 736. Janowicz J.
+ 737. Janvier M.
+ 738. Jarry N.
+ 739. Jasika O.
+ 740. Jaziri M.
+ 741. Jeanpierre J.
+ 742. Jelenic P.
+ 743. Jenkins S.
+ 744. Jensen L.
+ 745. Jeong S.Y.
+ 746. Jiang S.
+ 747. Jianu F.C.
+ 748. Jodar R.
+ 749. Johansson J.
+ 750. Johansson T.
+ 751. Johnson S.
+ 752. Jones A.
+ 753. Jones G.
+ 754. Jones G.D.
+ 755. Jonsson F.
+ 756. Jorda Sanchis D.
+ 757. Jouan R.
+ 758. Joyce M.
+ 759. Jubb P.
+ 760. Jun W.
+ 761. Jun W.S.
+ 762. Junaid R.
+ 763. Jung J.
+ 764. Junqueira D.
+ 765. Kachmazov A.
+ 766. Kadhe A.
+ 767. Kafelnikov Y.
+ 768. Kamke T.
+ 769. Karanusic R.
+ 770. Karatsev A.
+ 771. Karbacher B.
+ 772. Karlovic I.
+ 773. Karlovic I. 
+ 774. Karlovskiy E.
+ 775. Kasnikowski M.
+ 776. Kauffmann C.
+ 777. Kavcic B.
+ 778. Kecmanovic M.
+ 779. Kempes E.
+ 780. Kendrick R.
+ 781. Kennedy A.
+ 782. Kern R.
+ 783. Ketola T.
+ 784. Khachanov K.
+ 785. Khaddari H.
+ 786. Khalfan S.
+ 787. Kicker N.
+ 788. Kiefer N.
+ 789. Kilderry P.
+ 790. Kim A.
+ 791. Kim K
+ 792. Kim K.
+ 793. Kimmich M.
+ 794. Kindlmann D.
+ 795. King D.
+ 796. King E.
+ 797. King K.
+ 798. King P.
+ 799. King-Turner D.
+ 800. Kirchheimer S.
+ 801. Kirillov E.
+ 802. Kirkin E.
+ 803. Klaasen R.
+ 804. Klahn B.
+ 805. Klec I.
+ 806. Klein B.
+ 807. Klein L.
+ 808. Klein T.
+ 809. Klizan M.
+ 810. Kloer S.
+ 811. Knippschild J.
+ 812. Knittel B.
+ 813. Knowle J.
+ 814. Knowles M.
+ 815. Koderisch C.
+ 816. Koellerer D.
+ 817. Koellerer D. 
+ 818. Koenig R.
+ 819. Koepfer D.
+ 820. Kohlmann M.
+ 821. Kohlschreiber P.
+ 822. Kohlschreiber P. 
+ 823. Kohlschreiber P..
+ 824. Kokkinakis T.
+ 825. Kolar Z.
+ 826. Koll H.
+ 827. Kondo H.
+ 828. Koning M.
+ 829. Kontinen H.
+ 830. Kopriva V.
+ 831. Korda S.
+ 832. Kornienko I.
+ 833. Korolev E.
+ 834. Korolev E. 
+ 835. Korteling S.
+ 836. Kosakowski D.
+ 837. Kotov P.
+ 838. Kouame M.
+ 839. Koubek S.
+ 840. Kovacevic A.
+ 841. Kovalik J.
+ 842. Kozlov S.
+ 843. Krajan Z.
+ 844. Krajicek A.
+ 845. Krajicek R.
+ 846. Krajinovic F.
+ 847. Kralert P.
+ 848. Kratochvil M.
+ 849. Kravchuk K.
+ 850. Krawietz K.
+ 851. Kroslak J.
+ 852. Krstin P.
+ 853. Krueger M.
+ 854. Krutykh O.
+ 855. Kubler J.
+ 856. Kubot L.
+ 857. Kucera K.
+ 858. Kucera V.
+ 859. Kudla D.
+ 860. Kudryavtsev A.
+ 861. Kuerten G.
+ 862. Kuhn N.
+ 863. Kukushkin M.
+ 864. Kulti N.
+ 865. Kumantsov A.
+ 866. Kumar O.
+ 867. Kumar S.
+ 868. Kunitcin I.
+ 869. Kunitsyn I.
+ 870. Kunitsyn I. 
+ 871. Kutac R.
+ 872. Kutrovsky D.
+ 873. Kutsenko V.
+ 874. Kuzmanov D.
+ 875. Kuznetsov A.
+ 876. Kuznetsov Al.
+ 877. Kuznetsov An.
+ 878. Kwiatkowski T.S.
+ 879. Kwon S.W.
+ 880. Kym J.
+ 881. Kypson P.
+ 882. Kyrgios N.
+ 883. Laaksonen H.
+ 884. Labadze I.
+ 885. Lacko L.
+ 886. Lajal M.
+ 887. Lajola D.
+ 888. Lajovic D.
+ 889. Lalami Laaroussi Y.
+ 890. Lama G.
+ 891. Lamasine T.
+ 892. Lammer M.
+ 893. Lammer M. 
+ 894. Landaluce M.
+ 895. Landsberg J.
+ 896. Langer N.
+ 897. Lapentti G.
+ 898. Lapentti N.
+ 899. Lareau S.
+ 900. Larkham T.
+ 901. Larose S.
+ 902. Larsson M.
+ 903. Lazarov A.
+ 904. Lazov A.
+ 905. Ledovskikh M.
+ 906. Lee D.H.
+ 907. Lee H.T.
+ 908. Lee M.
+ 909. Lehecka J.
+ 910. Lejnieks K.
+ 911. Lemke J.
+ 912. Lenz J.
+ 913. Leshem E.
+ 914. Lestienne C.
+ 915. Levine I.
+ 916. Levine J.
+ 917. Levinsky J.
+ 918. Levy H.
+ 919. Li Z.
+ 920. Li Zh.
+ 921. Lindahl N.
+ 922. Lindell C.
+ 923. Linzer M.
+ 924. Lipsky S.
+ 925. Lisnard J.
+ 926. Lisnard J.R.
+ 927. Liukko V.
+ 928. Ljubicic I.
+ 929. Ljubicic I. 
+ 930. Llamas Ruiz P.
+ 931. Llodra M.
+ 932. Lock B.
+ 933. Loffhagen G.
+ 934. Logtens P.
+ 935. Lojda D.
+ 936. Lokoli L.
+ 937. Londero J.I.
+ 938. Lopes H.
+ 939. Lopez F.
+ 940. Lopez F. 
+ 941. Lopez M.
+ 942. Lopez San Martin A.
+ 943. Lopez Villasenor G.
+ 944. Lopez-Jaen M.A.
+ 945. Lopez-Moron A.
+ 946. Lopez-Perez E.
+ 947. Lorenzi P.
+ 948. Lu H.
+ 949. Lu Y.
+ 950. Lu Y.H.
+ 951. Luczak P.
+ 952. Luczak P. 
+ 953. Lukaev R.
+ 954. Luncanu P.A.
+ 955. Luque D.
+ 956. Luxa P.
+ 957. Luz O.
+ 958. Luzzi F.
+ 959. Maamoun K.
+ 960. MacLagan M.
+ 961. MacPhie B.
+ 962. Machac T.
+ 963. Machado R.
+ 964. Mackin A.
+ 965. Madaras D.
+ 966. Maden Y.
+ 967. Maestrelli F.
+ 968. Magadan A.
+ 969. Mager G.
+ 970. Mahut N.
+ 971. Majchrzak K.
+ 972. Malcor O.
+ 973. Malisse X.
+ 974. Mamiit C.
+ 975. Mankad H.
+ 976. Mannarino A.
+ 977. Mansouri S.
+ 978. Manta L.
+ 979. Mantilla F.
+ 980. Marach O.
+ 981. Marcaccio G.
+ 982. Marcan D.
+ 983. Marchenko I.
+ 984. Marcondes I.
+ 985. Marcora R.
+ 986. Marin J.A
+ 987. Marin J.A.
+ 988. Marin L.
+ 989. Marozsan F.
+ 990. Marques N.
+ 991. Marrai M.
+ 992. Marray J.
+ 993. Marrero D.
+ 994. Martelli M.
+ 995. Marterer M.
+ 996. Marti J.
+ 997. Marti Y.
+ 998. Martin A.
+ 999. Martin A. 
+1000. Martin D.
+1001. Martin F.
+1002. Martin T.
+1003. Martineau M.
+1004. Martinez P.
+1005. Massa E.
+1006. Massu N.
+1007. Masur D.
+1008. Mathieu P.
+1009. Mathieu P.H.
+1010. Mathieu P.H. 
+1011. Matias N.
+1012. Matkowski M.
+1013. Matos-Gil I.
+1014. Matosevic M.
+1015. Matsui T.
+1016. Matsukevitch D.
+1017. Mayer F.
+1018. Mayer L.
+1019. Mayer L. 
+1020. Mayot H.
+1021. Mazarakis V.
+1022. McCabe J.
+1023. McClune M.
+1024. McDonald M.
+1025. Mccabe J.
+1026. Mcclune M.
+1027. Mcdonald M.
+1028. Mcgee J.
+1029. Mecir M.
+1030. Medjedovic H.
+1031. Medvedev A.
+1032. Medvedev D.
+1033. Medvedev D. 
+1034. Meffert D.
+1035. Meister N.
+1036. Mejia N.
+1037. Mektic N.
+1038. Meligeni Alves F.
+1039. Meligeni F.
+1040. Meligeni Rodrigues F
+1041. Mello R.
+1042. Melo D.
+1043. Melzer G.
+1044. Melzer J.
+1045. Mena F.
+1046. Menendez-Maceiras A.
+1047. Menezes J.
+1048. Mensik J.
+1049. Mergea F.
+1050. Merida Aguilar D.
+1051. Mertens Y.
+1052. Mertinak M.
+1053. Mertl J.
+1054. Mesaros K.
+1055. Michelsen A.
+1056. Michon A.
+1057. Middelkoop M.
+1058. Midon L.
+1059. Miedler L.
+1060. Miguel L.
+1061. Miketa D.
+1062. Mikrut L.
+1063. Milligan L.
+1064. Millman J.
+1065. Millot V.
+1066. Milojevic N.
+1067. Mina G.
+1068. Minar I.
+1069. Minar J.
+1070. Miranda I.
+1071. Mirnegg M.
+1072. Mirnyi M.
+1073. Misolic F.
+1074. Mitchell B.
+1075. Miyao J.
+1076. Mlynarik Z.
+1077. Mmoh M.
+1078. Mo Y.
+1079. Mochizuki S.
+1080. Molcan A.
+1081. Moldovan I.
+1082. Molleker R.
+1083. Moller E.
+1084. Molteni A.
+1085. Monaco J.
+1086. Monaco J. 
+1087. Monday J.
+1088. Monfils G.
+1089. Monfils G. 
+1090. Montanes A.
+1091. Montanes A. 
+1092. Montcourt M.
+1093. Monteiro J.
+1094. Monteiro T.
+1095. Moodie W.
+1096. Mor L.
+1097. Moraing M.
+1098. Moraru G.
+1099. Moreno De Alboran N.
+1100. Moretti H.
+1101. Moriya H.
+1102. Moro Canas A.
+1103. Moroni G.
+1104. Moroni G.M.
+1105. Morrison J.
+1106. Moser F.
+1107. Mota B.
+1108. Motomura G.
+1109. Mott B.
+1110. Moundir A.
+1111. Moutet C.
+1112. Moya C.
+1113. Moyano D.
+1114. Mpetshi G.
+1115. Mpetshi Perricard G.
+1116. Mu T.
+1117. Mukund S.
+1118. Muller A.
+1119. Muller G.
+1120. Munar J.
+1121. Munoz De La Nava D.
+1122. Munoz de La Nava D.
+1123. Munoz de la Nava D.
+1124. Munoz-De La Nava D.
+1125. Murray A.
+1126. Murray A. 
+1127. Musetti L.
+1128. Muster T.
+1129. Mutis O.
+1130. Myneni S.
+1131. Nadal R.
+1132. Nadal R. 
+1133. Nadal-Parera R.
+1134. Nagal S.
+1135. Nakashima B.
+1136. Nalbandian D.
+1137. Nam H.W.
+1138. Nam J.S.
+1139. Nanda G.
+1140. Napolitano S.
+1141. Nardi L.
+1142. Nargiso D.
+1143. Naso G.
+1144. Nava E.
+1145. Navarra M.
+1146. Navarro S.
+1147. Navarro-Pastor I.
+1148. Navone M.
+1149. Nedelko I.
+1150. Nedovyesov A.
+1151. Nedovyesov O.
+1152. Nedunchezhiyan J.
+1153. Neff A.
+1154. Nestor D.
+1155. Neumayer L.
+1156. Neumuller I.
+1157. Nielsen F.
+1158. Nielsen M.
+1159. Niemeyer F.
+1160. Nieminen J.
+1161. Nieminen J. 
+1162. Niki T.
+1163. Nikles J.
+1164. Niland C.
+1165. Nishikori K.
+1166. Nishioka Y.
+1167. Noguchi R.
+1168. Norby R.
+1169. Norman D.
+1170. Norman M.
+1171. Norrie C.
+1172. Novak D.
+1173. Novak J.
+1174. Novikov D.
+1175. Nunez E.
+1176. O Connell C.
+1177. O'Brien A.
+1178. O'Connell C.
+1179. O'Neal J.
+1180. Odesnik W.
+1181. Ofner S.
+1182. Ogorodov O.
+1183. Ojeda Lara R.
+1184. Okun N.
+1185. Olaso G.
+1186. Olejniczak D.
+1187. Olguin L.
+1188. Oliel Y.
+1189. Olivetti A.
+1190. Olivieri G.
+1191. Olivo R.
+1192. Omarkhanov A.
+1193. Oncins J.
+1194. Onclin G.
+1195. Ondruska M.
+1196. Onoda M.
+1197. Opelka R.
+1198. Ortega-Olmedo R.
+1199. Ortegren J.
+1200. Oswald P.
+1201. Otte O.
+1202. Ouahab L.
+1203. Ouahabi T.
+1204. Ouanna J.
+1205. Oudsema S.
+1206. Ouyang B.
+1207. Pacheco Mendez R.
+1208. Paes L.
+1209. Paire B.
+1210. Palmer J.
+1211. Panfil G.
+1212. Pannu K.
+1213. Papamalamis T.
+1214. Parada F.
+1215. Parmar A.
+1216. Pasha N.
+1217. Pashanski B.
+1218. Passaro F.
+1219. Patience O.
+1220. Patino L.
+1221. Patriarca D.
+1222. Paul T.
+1223. Pavel A.
+1224. Pavic A.
+1225. Pavic M.
+1226. Pavlasek A.
+1227. Pavlovic L.
+1228. Pecotic M.
+1229. Pedroso A.
+1230. Peliwo F.
+1231. Pella G.
+1232. Pellegrino A.
+1233. Peniston R.
+1234. Peppas S.
+1235. Peralta J.
+1236. Perez D.
+1237. Peric T.
+1238. Perry T.
+1239. Pervolarakis M.
+1240. Pescariu D.
+1241. Peschek D.
+1242. Pescosolido S.
+1243. Petrovic D.
+1244. Petzschner P.
+1245. Petzschner P. 
+1246. Peya A.
+1247. Pfeiffer K.
+1248. Phau B.
+1249. Philippoussis M.
+1250. Phillips T.
+1251. Piccari F.
+1252. Pinnington Jones J.
+1253. Pioline C.
+1254. Piros Z.
+1255. Pless K.
+1256. Podlipnik H.
+1257. Poerschke L.
+1258. Polansky P.
+1259. Poljicak M.
+1260. Polmans M.
+1261. Popko D.
+1262. Popp A.
+1263. Popp T.
+1264. Popyrin A.
+1265. Portas A.
+1266. Pospisil J.
+1267. Pospisil V.
+1268. Pouille L.
+1269. Pozzi G.
+1270. Prashanth V.
+1271. Pretzsch A.
+1272. Prieto S.
+1273. Prinosil D.
+1274. Prizmic D.
+1275. Prodon E.
+1276. Prpic A.
+1277. Prpic F.
+1278. Przysiezny M.
+1279. Pucinelli de Almeida M.
+1280. Puentes G.
+1281. Puerta M.
+1282. Puetz T.
+1283. Purcell M.
+1284. Querrey S.
+1285. Querry S.
+1286. Quigley E.
+1287. Quinn E.
+1288. Quintero M.
+1289. Quinzi G.
+1290. Quiroz R.
+1291. Qureshi A.
+1292. Qureshi A.U.H.
+1293. Rachidi Y.
+1294. Radic M.
+1295. Rafter P.
+1296. Raja P.
+1297. Ram A.
+1298. Ram R.
+1299. Ramanathan R.
+1300. Ramirez C.
+1301. Ramirez Hidalgo R.
+1302. Ramirez-Hidalgo R.
+1303. Ramos A.
+1304. Ramos-Vinolas A.
+1305. Raonic M.
+1306. Raoux G.
+1307. Rascon T.
+1308. Rastogi K.
+1309. Ratiwatana S.
+1310. Rea S.
+1311. Recouderc L.
+1312. Rehberg M.
+1313. Rehnquist B.
+1314. Reichel A.
+1315. Reid M.
+1316. Reid T.
+1317. Reinberg E.
+1318. Reis Da Silva J.
+1319. Reister J.
+1320. Reix C.
+1321. Rejchtman Vinciguerra W.
+1322. Renavand N.
+1323. Reneberg R.
+1324. Rettenmaier T.
+1325. Reyes-Varela M.A.
+1326. Reynolds B.
+1327. Riba P.
+1328. Riba-Madrid P.
+1329. Riedi L.
+1330. Rieschick S.
+1331. Riffice S.
+1332. Rincon D.
+1333. Rinderknech A.
+1334. Rios F.
+1335. Rios M.
+1336. Ritschard A.
+1337. Robert S.
+1338. Robredo R.
+1339. Robredo T.
+1340. Robredo T. 
+1341. Roca Batalla O.
+1342. Rocha D.
+1343. Rocha H.
+1344. Rochus C.
+1345. Rochus C. 
+1346. Rochus O.
+1347. Rochus O. 
+1348. Roddick A.
+1349. Rodesch C.
+1350. Rodionov J.
+1351. Rodrigues M.
+1352. Rodriguez B.
+1353. Rodriguez M.
+1354. Rodriguez Taverna S.
+1355. Roger-Vasselin E.
+1356. Roitman S.
+1357. Rola B.
+1358. Romboli F.
+1359. Rosenholm P.
+1360. Roshardt R.
+1361. Rosol L.
+1362. Rosset M.
+1363. Rottgering M.
+1364. Roumane R.
+1365. Roux L.
+1366. Royer V.
+1367. Rubin N.
+1368. Rublev A.
+1369. Ruevski P.
+1370. Rufin G.
+1371. Rune H.
+1372. Rusedski G.
+1373. Russell M.
+1374. Ruud C.
+1375. Ruusuvuori E.
+1376. Rybakov A.
+1377. Ryderstedt M.
+1378. Sa A.
+1379. Saavedra Corvalan C.
+1380. Sabau R.
+1381. Sabry S.
+1382. Sachko V.
+1383. Sadecky A.
+1384. Safin M.
+1385. Safiullin R.
+1386. Safranek V.
+1387. Safwat M.
+1388. Sakamoto P.
+1389. Sakamoto R.
+1390. Sakellaridis S.
+1391. Sakharov G.
+1392. Salamanca C.
+1393. Salva B.
+1394. Salzenstein J.
+1395. Samper-Montana J.
+1396. Sampras P.
+1397. Samrej K.
+1398. Sanchez D.
+1399. Sanchez De Luna J.
+1400. Sanchez Izquierdo N.
+1401. Sanchez J.
+1402. Sanchez M.
+1403. Sanchez de Luna J.A.
+1404. Sandbichler A.
+1405. Sandgren T.
+1406. Sanguinetti D.
+1407. Santillan A.
+1408. Santopadre V.
+1409. Santoro F.
+1410. Saoudi S.
+1411. Saretta F.
+1412. Sargsian S.
+1413. Sarkissian A.
+1414. Sarmiento R.
+1415. Sarstrand M.
+1416. Satral J.
+1417. Saulnier C.
+1418. Saville L.
+1419. Savolt A.
+1420. Schalken S.
+1421. Scherrer J.
+1422. Scherrer J.C.
+1423. Schiessling T.
+1424. Schnur B.
+1425. Scholtz N.
+1426. Schoolkate T.
+1427. Schoorel T.
+1428. Schranz W.
+1429. Schuettler P.
+1430. Schuettler R.
+1431. Schuettler R. 
+1432. Schukin Y.
+1433. Schuttler P.
+1434. Schwaerzler J.
+1435. Schwaerzler J.J.
+1436. Schwank E.
+1437. Schwartzman D.
+1438. Searle H.
+1439. Sekulic M.
+1440. Sekulic P.
+1441. Sekulov J.
+1442. Sela D.
+1443. Sell K.
+1444. Sell M.
+1445. Seppi A.
+1446. Seppi A. 
+1447. Serdarusic N.
+1448. Sergeyev I.
+1449. Serra F.
+1450. Serra F. 
+1451. Serrano O.
+1452. Setkic A.
+1453. Settergren J.
+1454. Seyboth Wild T.
+1455. Shane R.
+1456. Shang J.
+1457. Shapovalov D.
+1458. Shelbayh A.
+1459. Shelton B.
+1460. Sherwood D.
+1461. Shevchenko A.
+1462. Shimabukuro S.
+1463. Shimada T.
+1464. Shimizu Y.
+1465. Shvec A.
+1466. Shyla Y.
+1467. Sidorenko A.
+1468. Siemerink J.
+1469. Sijsling I.
+1470. Silva D.
+1471. Silva F.
+1472. Silva F.F.
+1473. Silva J.
+1474. Simmonds P.
+1475. Simon G.
+1476. Simon G. 
+1477. Simoni A.
+1478. Simonsson F.
+1479. Singh N.
+1480. Singh S.
+1481. Sinner J.
+1482. Sirianni J.
+1483. Siriluethaiwattana P.
+1484. Sitak A.
+1485. Skatov T.
+1486. Skugor F.
+1487. Slabinsky A.
+1488. Slanar M.
+1489. Sluiter R.
+1490. Smeets R.
+1491. Smethurst D.
+1492. Smit J.
+1493. Smith C.
+1494. Smith J.P.
+1495. Smith L.
+1496. Smyczek T.
+1497. Snobel P.
+1498. Sock J.
+1499. Soderling R.
+1500. Soderlund C.
+1501. Soeda G.
+1502. Sonego L.
+1503. Sorensen L.
+1504. Soto M.
+1505. Sousa J.
+1506. Sousa P.
+1507. Sousa T.
+1508. Souza J.
+1509. Spadea V.
+1510. Spizzirri E.
+1511. Spottl M.
+1512. Squillari F.
+1513. Squire H.
+1514. Srichaphan N.
+1515. Srichaphan P.
+1516. Stadler S.
+1517. Stafford G.
+1518. Stakhovsky S.
+1519. Stanoytchev O.
+1520. Starace P.
+1521. Stark J.
+1522. Statham J.
+1523. Statham R.
+1524. Stebe C-M.
+1525. Stebe C.M.
+1526. Steckley R.
+1527. Stepanek M.
+1528. Stepanek R.
+1529. Stepanek R. 
+1530. Stoliarov A.
+1531. Stoltenberg J.
+1532. Stoppini A.
+1533. Stricker D.
+1534. Strode B.
+1535. Struff J-L.
+1536. Struff J.L.
+1537. Struvay E.
+1538. Sugita Y.
+1539. Sultan-Khalfan A.
+1540. Summerer T.
+1541. Sun F.
+1542. Sun P.
+1543. Suresh D.
+1544. Suzuki T.
+1545. Svajda T.
+1546. Svajda Z.
+1547. Svarc L.
+1548. Svrcina D.
+1549. Sweeny D.
+1550. Sweeting R.
+1551. Syed F.
+1552. Szymanski J.
+1553. Tabara M.
+1554. Taberner C.
+1555. Tabilo A.
+1556. Tabur C.
+1557. Tahiri M.
+1558. Taino E.
+1559. Takahashi Y.
+1560. Takeuchi K.
+1561. Tarallo S.
+1562. Tarango J.
+1563. Tarvet O.
+1564. Tavares L.
+1565. Te R.
+1566. Tearney F.
+1567. Tebbutt M.
+1568. Tecau H.
+1569. Teixeira M.
+1570. Tenconi T.
+1571. Tepavac M.
+1572. Terachi T.
+1573. Thiem D.
+1574. Thiem D. 
+1575. Thomann N.
+1576. Thomas J.
+1577. Thompson C.
+1578. Thompson J.
+1579. Thron A.
+1580. Tiafoe F.
+1581. Tieleman L.
+1582. Tien L.
+1583. Tiilikainen K.
+1584. Tillstrom M.
+1585. Timfjord N.
+1586. Tipsarevic J.
+1587. Tipsarevic J. 
+1588. Tirante T.A.
+1589. Tiurnev E.
+1590. Tkalec M.
+1591. Tobon M.
+1592. Todero N.
+1593. Tomashevich D.
+1594. Tomic B.
+1595. Tong M.
+1596. Topic J.
+1597. Topo M.
+1598. Torebko P.
+1599. Torpegaard M.
+1600. Tramacchi P.
+1601. Travaglia S.
+1602. Traykov I.
+1603. Trevisan M.
+1604. Trifu G.
+1605. Trimmel C.
+1606. Trinker B.
+1607. Troicki V.
+1608. Troicki V. 
+1609. Trongcharoenchaikul W.
+1610. Trotter J.K.
+1611. Trujillo G.
+1612. Trungelliti M.
+1613. Trusendi W.
+1614. Tseng C. H.
+1615. Tseng C.H.
+1616. Tsitsipas P.
+1617. Tsitsipas S.
+1618. Tsitsipas S. 
+1619. Tsonga J.W.
+1620. Tu L.
+1621. Tuksar S.
+1622. Turcanu R.D.
+1623. Tursunov D.
+1624. Tveit E.
+1625. Tyurnev E.
+1626. Uchida K.
+1627. Uchiyama Y.
+1628. Udomchoke D.
+1629. Uebel L.
+1630. Ugo Carabelli C.
+1631. Ulihrach B.
+1632. Ullyett K.
+1633. Ungur A.
+1634. Uppal V.
+1635. Urban F.
+1636. Vacek D.
+1637. Vacek J.
+1638. Vacherot V.
+1639. Vagnozzi S.
+1640. Vahaly B.
+1641. Vaisse M.
+1642. Vajda I.
+1643. Valent R.
+1644. Valkusz M.
+1645. Vallejo D.
+1646. Van Assche L.
+1647. Van D. Merwe I.
+1648. Van De Zandschulp B.
+1649. Van Der Merwe I.
+1650. Van Lottum J.
+1651. Van Rijthoven T.
+1652. Van der Dium A.
+1653. Van der Merwe I.
+1654. Vanek J.
+1655. Vanni L.
+1656. Vardhan V.
+1657. Varillas J. P.
+1658. Varillas J.P.
+1659. Varlet J.
+1660. Vasek R.
+1661. Vasilevski A.
+1662. Vassallo-Arguello M.
+1663. Vassallo-Arguello M. 
+1664. Vatutin A.
+1665. Vavassori A.
+1666. Vega Hernandez D.
+1667. Veger F.
+1668. Veic A.
+1669. Velotti A.
+1670. Vemic D.
+1671. Ventura S.
+1672. Venus M.
+1673. Verdasco F.
+1674. Verdasco F. 
+1675. Verdasco M.
+1676. Verkerk M.
+1677. Veronelli D.
+1678. Vesely J.
+1679. Vicente F.
+1680. Vicente M.
+1681. Vico U.
+1682. Vik R.
+1683. Vilella Martinez M.
+1684. Villanueva G.
+1685. Viloca J.A.
+1686. Vinciguerra A.
+1687. Vinck C.
+1688. Viola M.
+1689. Viola Mat.
+1690. Virtanen O.
+1691. Vlasov D.
+1692. Vliegen K.
+1693. Voinea A.
+1694. Volandri F.
+1695. Voltchkov V.
+1696. Vovk S.
+1697. Vrbensky M.
+1698. Vukic A.
+1699. Wachiramanowong K.
+1700. Walter L.
+1701. Walton A.
+1702. Wang C.
+1703. Wang J.
+1704. Wang Y.
+1705. Wang Y. Jr
+1706. Wang Y.Jr.
+1707. Wang Y.T.
+1708. Warburg S.
+1709. Ward A.
+1710. Ward J.
+1711. Washington M.
+1712. Waske A.
+1713. Wassen R.
+1714. Watanuki Y.
+1715. Watt J.
+1716. Wawrinka S.
+1717. Wawrinka S. 
+1718. Weiner G.
+1719. Weintraub A.
+1720. Weinzierl J.
+1721. Wessels L.
+1722. Wessels P.
+1723. Westerhof B.
+1724. Wheaton D.
+1725. Whitehouse W.
+1726. Whittington A.
+1727. Widom T.
+1728. Willems R.
+1729. Williams R.
+1730. Willis M.
+1731. Willman D.
+1732. Wilson B.
+1733. Wiltschnig H.
+1734. Witt A.
+1735. Witten J.
+1736. Wolf J.J.
+1737. Wolmarans F.
+1738. Wong C.
+1739. Woodbridge T.
+1740. Woodforde M.
+1741. Woodruff C.
+1742. Wu D.
+1743. Wu T.L.
+1744. Wu Y.
+1745. Xu J.C.
+1746. Yang T.H.
+1747. Yani M.
+1748. Yevseyev D.
+1749. Yim R.
+1750. Ymer E.
+1751. Ymer M.
+1752. Yoon Y.
+1753. Young D.
+1754. Youzhny A.
+1755. Youzhny M.
+1756. Youzhny M. 
+1757. Yu X.Y.
+1758. Yuksel A.
+1759. Zabaleta M.
+1760. Zahraj P.
+1761. Zampieri C.
+1762. Zapata Miralles B.
+1763. Zayed M. S.
+1764. Zayid M. S.
+1765. Zayid M.S.
+1766. Zeballos H.
+1767. Zeballos H. 
+1768. Zekic M.
+1769. Zemlja G.
+1770. Zeng S.X.
+1771. Zeppieri G.
+1772. Zhang Y.
+1773. Zhang Z.
+1774. Zhang Ze
+1775. Zhang Ze.
+1776. Zhang Zh.
+1777. Zheng M.
+1778. Zhou Y.
+1779. Zhu B.Q.
+1780. Zhukayev B.
+1781. Ziadi M.
+1782. Zib T.
+1783. Zimonjic N.
+1784. Zitko R.
+1785. Zlatanovic A.
+1786. Zopp J.
+1787. Zovko L.
+1788. Zuk K.
+1789. Zverev A.
+1790. Zverev A. 
+1791. Zverev M.
+1792. de Chaunac S.
+1793. de Voest R.
+1794. di Mauro A.
+1795. di Pasquale A.
+1796. van Gemerden M.
+1797. van Lottum J.
+1798. van Scheppingen D.
+1799. van der Meer N.

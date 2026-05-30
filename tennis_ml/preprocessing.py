@@ -105,6 +105,9 @@ def load_and_preprocess_tennis_data(
     df["Day"] = df["Date"].dt.day
     df = df.drop(columns=["Date"])
 
+    # Convert Odd_1 to numeric
+    df["Odd_1"] = pd.to_numeric(df["Odd_1"], errors="coerce")
+
     X = df.drop(columns=["Player_1_Wins"])
     y = df["Player_1_Wins"]
 
@@ -138,7 +141,7 @@ def load_and_preprocess_tennis_data(
     categorical_transformer = Pipeline(
         steps=[
             ("imputer", SimpleImputer(strategy="constant", fill_value="missing")),
-            ("onehot", OneHotEncoder(handle_unknown="ignore")),
+            ("onehot", OneHotEncoder(handle_unknown="ignore", sparse_output=False)),
         ]
     )
 

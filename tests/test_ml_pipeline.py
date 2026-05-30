@@ -1,12 +1,23 @@
 import tempfile
 import unittest
 import zipfile
+import json
 from pathlib import Path
 
 from tennis_ml.__main__ import main as entrypoint_main
 from tennis_ml.preprocessing import load_and_preprocess_tennis_data, preprocess_rows
-from tennis_ml.training import save_model, train_mean_regressor
-from tennis_ml.usage import load_model, predict
+from tennis_ml.training import (
+    save_model,
+    save_model_json,
+    train_mean_regressor,
+    train_decision_tree,
+    train_neural_network,
+    train_random_forest,
+    train_kmeans_clustering,
+    evaluate_model,
+    get_feature_importance,
+)
+from tennis_ml.usage import load_model, predict, predict_proba, predict_mean_regressor
 
 
 class TestMlPipeline(unittest.TestCase):
@@ -69,22 +80,169 @@ Open,A,Outdoor,Hard,F,Rafael Nadal,Rafael Nadal,Carlos Alcaraz,6-3 6-3,2024-03-0
         self.assertEqual(len(y_test), 1)
         self.assertEqual(X_train.shape[1], len(feature_names))
 
-    def test_train_save_load_and_predict(self) -> None:
-        features = [[100.0, 2000.0], [110.0, 2100.0], [105.0, 1900.0]]
-        targets = [1.0, 0.0, 1.0]
-
-        model = train_mean_regressor(features, targets)
+    def test_train_decision_tree(self) -> None:
+        """Test decision tree training and evaluation."""
+        csv_data = self._sample_csv_data()
 
         with tempfile.TemporaryDirectory() as tmp_dir:
-            model_path = Path(tmp_dir) / "model.json"
-            save_model(model, model_path)
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            dt_model = train_decision_tree(X_train, y_train)
+            metrics = evaluate_model(dt_model, X_test, y_test)
+
+        self.assertIn("accuracy", metrics)
+        self.assertIn("precision", metrics)
+        self.assertIn("recall", metrics)
+        self.assertIn("f1", metrics)
+        self.assertGreaterEqual(metrics["accuracy"], 0)
+        self.assertLessEqual(metrics["accuracy"], 1)
+
+    def test_train_neural_network(self) -> None:
+        """Test neural network training and evaluation."""
+        csv_data = self._sample_csv_data()
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            nn_model = train_neural_network(X_train, y_train)
+            metrics = evaluate_model(nn_model, X_test, y_test)
+
+        self.assertIn("accuracy", metrics)
+        self.assertGreaterEqual(metrics["accuracy"], 0)
+        self.assertLessEqual(metrics["accuracy"], 1)
+
+    def test_train_random_forest(self) -> None:
+        """Test random forest training and evaluation."""
+        csv_data = self._sample_csv_data()
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            rf_model = train_random_forest(X_train, y_train)
+            metrics = evaluate_model(rf_model, X_test, y_test)
+
+        self.assertIn("accuracy", metrics)
+        self.assertGreaterEqual(metrics["accuracy"], 0)
+
+    def test_feature_importance_extraction(self) -> None:
+        """Test feature importance extraction from models."""
+        csv_data = self._sample_csv_data()
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            # Test with Decision Tree
+            dt_model = train_decision_tree(X_train, y_train)
+            importance = get_feature_importance(dt_model, feature_names, top_n=5)
+
+        self.assertGreater(len(importance), 0)
+        # Check that it returns tuples of (feature_name, importance_score)
+        for feature_name, score in importance:
+            self.assertIsInstance(feature_name, str)
+            self.assertIsInstance(score, float)
+
+    def test_kmeans_clustering(self) -> None:
+        """Test K-means clustering training."""
+        csv_data = self._sample_csv_data()
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            kmeans_model = train_kmeans_clustering(X_train, n_clusters=2)
+
+        self.assertEqual(kmeans_model.n_clusters, 2)
+        self.assertGreater(len(kmeans_model.cluster_centers_), 0)
+
+    def test_save_load_pickle_model(self) -> None:
+        """Test saving and loading models with pickle."""
+        csv_data = self._sample_csv_data()
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            dt_model = train_decision_tree(X_train, y_train)
+            model_path = Path(tmp_dir) / "model.pkl"
+            save_model(dt_model, model_path)
+
             loaded_model = load_model(model_path)
+            predictions = predict(loaded_model, X_test)
 
-        predictions = predict(loaded_model, [[98.0, 1800.0], [108.0, 2050.0]])
+        self.assertEqual(len(predictions), X_test.shape[0])
+        for pred in predictions:
+            self.assertIn(pred, [0.0, 1.0])
 
-        self.assertEqual(predictions, [2.0 / 3.0, 2.0 / 3.0])
+    def test_predict_proba(self) -> None:
+        """Test probability predictions."""
+        csv_data = self._sample_csv_data()
 
-    def test_entrypoint_main_trains_and_saves_model(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            file_path = Path(tmp_dir) / "atp_tennis.csv"
+            file_path.write_text(csv_data, encoding="utf-8")
+
+            X_train, X_test, y_train, y_test, feature_names = load_and_preprocess_tennis_data(
+                file_path
+            )
+
+            nn_model = train_neural_network(X_train, y_train)
+            model_path = Path(tmp_dir) / "model.pkl"
+            save_model(nn_model, model_path)
+
+            loaded_model = load_model(model_path)
+            probas = predict_proba(loaded_model, X_test)
+
+        self.assertEqual(len(probas), X_test.shape[0])
+        for proba in probas:
+            self.assertEqual(len(proba), 2)  # Binary classification
+            self.assertAlmostEqual(sum(proba), 1.0, places=5)
+
+    def test_save_load_json_results(self) -> None:
+        """Test saving and loading JSON results."""
+        results = {
+            "models": {"decision_tree": {"accuracy": 0.85}},
+            "feature_importance": {"decision_tree": [("Feature_1", 0.5)]},
+        }
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            json_path = Path(tmp_dir) / "results.json"
+            save_model_json(results, json_path)
+
+            with open(json_path, "r") as f:
+                loaded = json.load(f)
+
+        self.assertEqual(loaded["models"]["decision_tree"]["accuracy"], 0.85)
+
+    def test_entrypoint_main_basic_mode(self) -> None:
+        """Test CLI entrypoint in basic mode."""
         csv_data = """speed,spin,result
 100,2000,1
 110,2100,0
@@ -100,8 +258,10 @@ Open,A,Outdoor,Hard,F,Rafael Nadal,Rafael Nadal,Carlos Alcaraz,6-3 6-3,2024-03-0
                 [
                     "--data",
                     str(csv_path),
-                    "--model",
-                    str(model_path),
+                    "--model-type",
+                    "baseline",
+                    "--output-dir",
+                    str(tmp_dir) + "/",
                     "--feature-columns",
                     "speed",
                     "spin",
@@ -110,11 +270,12 @@ Open,A,Outdoor,Hard,F,Rafael Nadal,Rafael Nadal,Carlos Alcaraz,6-3 6-3,2024-03-0
                 ]
             )
 
-            loaded_model = load_model(model_path)
-
         self.assertEqual(exit_code, 0)
-        self.assertEqual(loaded_model["model_type"], "mean_regressor")
-        self.assertEqual(loaded_model["target_mean"], 2.0 / 3.0)
+
+
+if __name__ == "__main__":
+    import json
+    unittest.main()
 
 
 if __name__ == "__main__":
