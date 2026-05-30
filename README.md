@@ -6,6 +6,25 @@ Basic Python structure for a machine learning project with:
 - **training** (`/tennis_ml/training.py`)
 - **use/inference** (`/tennis_ml/usage.py`)
 
+## Preprocessing phase
+
+Use `load_and_preprocess_tennis_data(...)` from `/tennis_ml/preprocessing.py`.
+It uses `pandas`, `numpy`, and `scikit-learn` for:
+
+- missing-value replacement (`-1` and `-1.0` to `NaN`)
+- target creation (`Player_1_Wins`)
+- date feature engineering (`Year`, `Month`, `Day`)
+- player name label encoding
+- numeric imputation + scaling
+- categorical imputation + one-hot encoding
+- train/test split and transformed outputs
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 Run tests with:
 
 ```bash

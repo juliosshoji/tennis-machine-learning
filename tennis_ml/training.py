@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 
-def train_mean_regressor(features: list[list[float]], targets: list[float]) -> dict[str, float]:
+def train_mean_regressor(features: list[list[float]], targets: list[float]) -> dict[str, str | float]:
     """Train a simple baseline model that predicts the mean target value."""
     if not features or not targets:
         raise ValueError("features and targets must not be empty")
@@ -17,7 +17,7 @@ def train_mean_regressor(features: list[list[float]], targets: list[float]) -> d
     return {"model_type": "mean_regressor", "target_mean": sum(targets) / len(targets)}
 
 
-def save_model(model: dict[str, float], path: str | Path) -> None:
+def save_model(model: dict[str, str | float], path: str | Path) -> None:
     """Persist the trained model as JSON."""
     destination = Path(path)
     destination.parent.mkdir(parents=True, exist_ok=True)
