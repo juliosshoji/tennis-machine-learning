@@ -3,6 +3,7 @@ import unittest
 import zipfile
 from pathlib import Path
 
+from tennis_ml.__main__ import main as entrypoint_main
 from tennis_ml.preprocessing import load_and_preprocess_tennis_data, preprocess_rows
 from tennis_ml.training import save_model, train_mean_regressor
 from tennis_ml.usage import load_model, predict
@@ -82,6 +83,38 @@ Open,A,Outdoor,Hard,F,Rafael Nadal,Rafael Nadal,Carlos Alcaraz,6-3 6-3,2024-03-0
         predictions = predict(loaded_model, [[98.0, 1800.0], [108.0, 2050.0]])
 
         self.assertEqual(predictions, [2.0 / 3.0, 2.0 / 3.0])
+
+    def test_entrypoint_main_trains_and_saves_model(self) -> None:
+        csv_data = """speed,spin,result
+100,2000,1
+110,2100,0
+105,1900,1
+"""
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            csv_path = Path(tmp_dir) / "dataset.csv"
+            model_path = Path(tmp_dir) / "model.json"
+            csv_path.write_text(csv_data, encoding="utf-8")
+
+            exit_code = entrypoint_main(
+                [
+                    "--data",
+                    str(csv_path),
+                    "--model",
+                    str(model_path),
+                    "--feature-columns",
+                    "speed",
+                    "spin",
+                    "--target-column",
+                    "result",
+                ]
+            )
+
+            loaded_model = load_model(model_path)
+
+        self.assertEqual(exit_code, 0)
+        self.assertEqual(loaded_model["model_type"], "mean_regressor")
+        self.assertEqual(loaded_model["target_mean"], 2.0 / 3.0)
 
 
 if __name__ == "__main__":

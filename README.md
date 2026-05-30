@@ -50,3 +50,15 @@ Run tests with:
 ```bash
 python -m unittest discover -v
 ```
+
+## Entrypoint
+
+You can run the package entrypoint to train and save a baseline model from a CSV:
+
+```bash
+python -m tennis_ml \
+  --data path/to/data.csv \
+  --model path/to/model.json \
+  --feature-columns speed spin \
+  --target-column result
+```
