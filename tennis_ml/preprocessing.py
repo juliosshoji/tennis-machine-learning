@@ -3,13 +3,13 @@
 from __future__ import annotations
 
 import csv
+import zipfile
 from pathlib import Path
 from typing import Iterable
 
-from scipy.sparse import spmatrix
-
 import numpy as np
 import pandas as pd
+from scipy.sparse import spmatrix
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
@@ -45,11 +45,50 @@ def preprocess_rows(
     return features, targets
 
 
+def _read_csv_from_zip(zip_path: Path, member_name: str | None = None) -> pd.DataFrame:
+    with zipfile.ZipFile(zip_path) as archive:
+        csv_members = [name for name in archive.namelist() if name.lower().endswith(".csv")]
+        if not csv_members:
+            raise ValueError(f"No CSV files found in archive: {zip_path}")
+
+        if member_name is None:
+            preferred = [name for name in csv_members if Path(name).name.lower() == "atp_tennis.csv"]
+            selected_member = preferred[0] if preferred else csv_members[0]
+        else:
+            matches = [
+                name
+                for name in csv_members
+                if name == member_name or Path(name).name == Path(member_name).name
+            ]
+            if not matches:
+                raise FileNotFoundError(
+                    f"CSV member '{member_name}' not found in archive: {zip_path}"
+                )
+            selected_member = matches[0]
+
+        with archive.open(selected_member) as csv_file:
+            return pd.read_csv(csv_file)
+
+
+def _read_tennis_dataframe(file_path: str | Path) -> pd.DataFrame:
+    path_text = str(file_path)
+    if ".zip/" in path_text:
+        zip_prefix, member_name = path_text.split(".zip/", maxsplit=1)
+        zip_path = Path(f"{zip_prefix}.zip")
+        return _read_csv_from_zip(zip_path, member_name)
+
+    path = Path(file_path)
+    if path.suffix.lower() == ".zip":
+        return _read_csv_from_zip(path)
+
+    return pd.read_csv(path)
+
+
 def load_and_preprocess_tennis_data(
     file_path: str | Path,
 ) -> tuple[np.ndarray | spmatrix, np.ndarray | spmatrix, pd.Series, pd.Series, list[str]]:
     """Load and preprocess tennis data for model training."""
-    df = pd.read_csv(file_path)
+    df = _read_tennis_dataframe(file_path)
 
     df.replace(-1, np.nan, inplace=True)
     df["Player_1_Wins"] = (df["Winner"] == df["Player_1"]).astype(int)
