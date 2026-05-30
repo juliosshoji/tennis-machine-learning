@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Player Search Tool - Find players in the ATP database and get predictions
+Player Search Tool - Find players in the Tennis Match Charting Project database
 
 Usage:
     python player_search.py                    # Interactive search
-    python player_search.py "Nadal"             # Search for player
-    python player_search.py "Nadal" "Djokovic"  # Get predictions for matchup
+    python player_search.py "Sinner"           # Search for player
+    python player_search.py "Sinner" "Alcaraz" # Get predictions for matchup
 """
 
 import pandas as pd
@@ -14,13 +14,25 @@ from pathlib import Path
 
 
 def load_players():
-    """Load all unique players from the dataset."""
-    if not Path("atp_tennis.csv").exists():
-        print("Error: atp_tennis.csv not found")
+    """Load all unique players from the Tennis Match Charting Project dataset."""
+    base_path = Path("new-dataset/tennis_MatchChartingProject-master")
+    
+    if not base_path.exists():
+        print("Error: new-dataset not found")
         sys.exit(1)
     
-    df = pd.read_csv("atp_tennis.csv", low_memory=False)
-    players = sorted(list(set(df["Player_1"].unique()) | set(df["Player_2"].unique())))
+    # Load both men's and women's matches
+    m_matches = pd.read_csv(base_path / "charting-m-matches.csv")
+    w_matches = pd.read_csv(base_path / "charting-w-matches.csv")
+    
+    # Combine players
+    players = sorted(list(
+        set(m_matches["Player 1"].unique()) | 
+        set(m_matches["Player 2"].unique()) |
+        set(w_matches["Player 1"].unique()) | 
+        set(w_matches["Player 2"].unique())
+    ))
+    
     return players
 
 
@@ -108,11 +120,11 @@ def interactive_mode():
     """Interactive mode for player search and predictions."""
     
     print("\n" + "="*70)
-    print("ATP PLAYER SEARCH AND PREDICTION TOOL")
+    print("TENNIS MATCH CHARTING PROJECT - PLAYER SEARCH")
     print("="*70)
     
     players = load_players()
-    print(f"\nLoaded {len(players)} players from ATP database (2000-2023)")
+    print(f"\nLoaded {len(players)} players from Tennis Match Charting Project")
     
     while True:
         print("\nOptions:")
@@ -254,10 +266,21 @@ def command_line_mode(args: list):
 def main():
     """Main entry point."""
     
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 1 and sys.argv[1] not in ["--help", "-h"]:
         # Command-line mode
         args = sys.argv[1:]
         command_line_mode(args)
+    elif "--help" in sys.argv or "-h" in sys.argv:
+        print("\nPlayer Search Tool - Find players in Tennis Match Charting Project")
+        print("\nUsage:")
+        print("  python player_search.py                 # Interactive mode")
+        print("  python player_search.py \"Sinner\"        # Search for player")
+        print("  python player_search.py \"Sinner\" \"Alcaraz\"  # Search both players")
+        print("\nExamples:")
+        print("  python player_search.py")
+        print("  python player_search.py \"Federer\"")
+        print("  python player_search.py \"Nadal\"")
+        print()
     else:
         # Interactive mode
         interactive_mode()
