@@ -6,6 +6,8 @@ import csv
 from pathlib import Path
 from typing import Iterable
 
+from scipy.sparse import spmatrix
+
 import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer
@@ -45,11 +47,11 @@ def preprocess_rows(
 
 def load_and_preprocess_tennis_data(
     file_path: str | Path,
-) -> tuple[object, object, pd.Series, pd.Series, list[str]]:
+) -> tuple[np.ndarray | spmatrix, np.ndarray | spmatrix, pd.Series, pd.Series, list[str]]:
     """Load and preprocess tennis data for model training."""
     df = pd.read_csv(file_path)
 
-    df.replace([-1, -1.0], np.nan, inplace=True)
+    df.replace(-1, np.nan, inplace=True)
     df["Player_1_Wins"] = (df["Winner"] == df["Player_1"]).astype(int)
 
     cols_to_drop = ["Winner", "Score"]
