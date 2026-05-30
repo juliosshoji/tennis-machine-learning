@@ -17,6 +17,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
 
+DEFAULT_DATASET_CSV_NAME = "atp_tennis.csv"
+
+
 def load_csv_rows(path: str | Path) -> list[dict[str, str]]:
     """Load a CSV file into a list of dictionaries."""
     with Path(path).open("r", encoding="utf-8", newline="") as file:
@@ -52,7 +55,7 @@ def _read_csv_from_zip(zip_path: Path, member_name: str | None = None) -> pd.Dat
             raise ValueError(f"No CSV files found in archive: {zip_path}")
 
         if member_name is None:
-            preferred = [name for name in csv_members if Path(name).name.lower() == "atp_tennis.csv"]
+            preferred = [name for name in csv_members if Path(name).name.lower() == DEFAULT_DATASET_CSV_NAME]
             selected_member = preferred[0] if preferred else csv_members[0]
         else:
             matches = [
