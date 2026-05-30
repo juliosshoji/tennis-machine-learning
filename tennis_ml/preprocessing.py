@@ -43,7 +43,9 @@ def preprocess_rows(
     return features, targets
 
 
-def load_and_preprocess_tennis_data(file_path: str | Path):
+def load_and_preprocess_tennis_data(
+    file_path: str | Path,
+) -> tuple[object, object, pd.Series, pd.Series, list[str]]:
     """Load and preprocess tennis data for model training."""
     df = pd.read_csv(file_path)
 
